@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers Hub Website - Home</title>
+    <style>
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-image: url("farmer.JPEG"); /* Replace with your image file */
+            background-size: cover;   /* Make sure it covers the screen */
+            background-position: center; /* Center the image */
+            background-attachment: fixed; /* Stays fixed while scrolling */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: rgba(76, 175, 80, 0.85); /* Transparent green overlay */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(51, 51, 51, 0.9); /* Semi-transparent black */
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.9); /* White box with transparency */
+            border-radius: 10px;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .category-grid, .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .category-card, .product-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+            background-color: white;
+            transition: transform 0.3s;
+        }
+        .category-card:hover, .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .category-card img, .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+        form div {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .business-header {
+            background-color: rgba(245, 245, 245, 0.9);
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+        }
+        .article {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lesotho Farmers Hub</h1>
+        <p>Connecting farmers with customers</p>
+    </header>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="business.html">Business Page</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="tips.html">Business Tips</a>
+    </nav>
+
+    <div class="container">
+        <h2>Farmer Categories</h2>
+        <p>Browse farmers by category to find the products you need</p>
+        
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="vegetables and fruits.jpg" alt="Crop Farming">
+                <h3>Crop Farmers</h3>
+                <p>Vegetables, fruits and more</p>
+            </div>
+            <div class="category-card">
+                <img src="livestock.jpg" alt="Livestock">
+                <h3>Livestock Farmers</h3>
+                <p>Sheep</p>
+            </div>
+            <div class="category-card">
+                <img src="dairy.jpg" alt="Dairy">
+                <h3>Dairy Producers</h3>
+                <p>Milk, cheese, yogurt and more</p>
+            </div>
+            <div class="category-card">
+                <img src="poultry.jpg" alt="Poultry">
+                <h3>Poultry Farmers</h3>
+                <p>Eggs, chicken and other poultry products</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Farmers Hub Website. All rights reserved.</p>
+        <p>Supporting local agriculture in Lesotho</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmers Hub Website - Business Tips</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url("farmer.JPEG"); /* Replace with your background */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      z-index: 1;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5); /* Dark overlay */
+      z-index: -1;
+    }
+    header {
+      background-color: rgba(25, 135, 84, 0.9); /* Semi-transparent green */
+    }
+    nav.navbar {
+      background-color: rgba(33, 37, 41, 0.9) !important;
+    }
+    footer {
+      background-color: rgba(33, 37, 41, 0.9) !important;
+    }
+    .content-box {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="text-white text-center py-4">
+    <h1>Lesotho Farmers Hub</h1>
+    <p>Connecting farmers with customers</p>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <div class="navbar-nav mx-auto">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="business.html">Business Page</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href="contact.html">Contact Us</a>
+        <a class="nav-link active" href="tips.html">Business Tips</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5 content-box">
+    <h2 class="mb-4">Business Tips for Farmers</h2>
+
+    <!-- Tip 1 -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-body">
+        <h3 class="card-title">Pricing Your Products Competitively</h3>
+        <p class="card-text">Learn how to set prices that attract customers while ensuring you make a profit. Consider your costs, market prices, and what customers are willing to pay.</p>
+        <p><strong>Tip:</strong> Start by researching what similar products are selling for in your area.</p>
+      </div>
+    </div>
+
+    <!-- Add more tips here -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-body">
+        <h3 class="card-title">Build Strong Customer Relationships</h3>
+        <p class="card-text">Your customers are your best marketers. Keep them happy with good service, quick responses, and consistent product quality.</p>
+        <p><strong>Tip:</strong> Always follow up with customers after sales to build trust.</p>
+      </div>
+    </div>
+
+    <!-- Subscription Form -->
+    <h3 class="mt-4">Subscribe for More Tips</h3>
+    <form class="row g-3" style="max-width: 500px;">
+      <div class="col-12">
+        <label for="tip-email" class="form-label">Email:</label>
+        <input type="email" id="tip-email" name="email" placeholder="Enter your email" class="form-control" required>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-success">Subscribe</button>
+      </div>
+    </form>
+  </div>
+
+  <footer class="text-white text-center py-3 mt-5">
+    <p>&copy; 2025 Farmers Hub Website. All rights reserved.</p>
+    <p>Supporting local agriculture in Lesotho</p>
+  </footer>
+
+</body>
+</html>

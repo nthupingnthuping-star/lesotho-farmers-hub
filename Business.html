@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmers Hub Website - Business Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url("farmer.JPEG"); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+    }
+    .overlay-container {
+      background-color: rgba(255, 255, 255, 0.9); /* White transparent overlay */
+      border-radius: 10px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+        height: 180px;
+        object-fit: cover;
+    }
+    header {
+      background-color: rgba(25, 135, 84, 0.9); /* Bootstrap success green with transparency */
+    }
+    nav.navbar {
+      background-color: rgba(33, 37, 41, 0.9) !important; /* Semi-transparent dark */
+    }
+    footer {
+      background-color: rgba(33, 37, 41, 0.9) !important;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="text-white text-center py-4">
+    <h1>Lesotho Farmers Hub</h1>
+    <p>Connecting farmers with customers</p>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <div class="navbar-nav mx-auto">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="business.html">Business Page</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href="contact.html">Contact Us</a>
+        <a class="nav-link" href="tips.html">Business Tips</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container overlay-container">
+    <div class="business-header text-center mb-5">
+      <h2>Mokhotlong Fresh Produce</h2>
+      <p>Located in Mokhotlong District | Contact: 5678 9012</p>
+    </div>
+
+    <h3>Our Products</h3>
+    <div class="row g-4 mt-3">
+      <!-- Product Cards -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="potatoes.jpg" class="card-img-top" alt="potatoes">
+          <div class="card-body">
+            <h5 class="card-title">Potatoes</h5>
+            <p>Freshly harvested potatoes</p>
+            <p><strong>Price:</strong> M25 per kg</p>
+            <p>Available: Yes</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="cabbage.jpg" class="card-img-top" alt="cabbage">
+          <div class="card-body">
+            <h5 class="card-title">Cabbage</h5>
+            <p>Freshly harvested cabbage</p>
+            <p><strong>Price:</strong> M20 per cabbage</p>
+            <p>Available: Yes</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="carrots.jpg" class="card-img-top" alt="carrots">
+          <div class="card-body">
+            <h5 class="card-title">Carrots</h5>
+            <p>Freshly harvested carrots</p>
+            <p><strong>Price:</strong> M30 per bunch</p>
+            <p>Available: Yes</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="spinach.jpg" class="card-img-top" alt="spinach">
+          <div class="card-body">
+            <h5 class="card-title">Spinach</h5>
+            <p>Freshly harvested spinach</p>
+            <p><strong>Price:</strong> M15 per bunch</p>
+            <p>Available: Yes</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="text-white text-center py-3 mt-5">
+    <p>&copy; 2025 Farmers Hub Website. All rights reserved.</p>
+    <p>Supporting local agriculture in Lesotho</p>
+  </footer>
+
+</body>
+</html>
